@@ -5,7 +5,7 @@ style "clearlooks-default"
 	GtkPaned	::handle_size		= 6
 	GtkRange	::slider_width		= 15
 	GtkRange	::stepper_size		= 15
-	
+
 	GtkScrollbar	::min_slider_length	= 30
 	GtkCheckButton	::indicator_size	= 14
 	GtkMenuBar	::internal-padding	= 0
@@ -27,20 +27,20 @@ style "clearlooks-default"
 
 	fg[NORMAL]		= "#000000" # black
 	fg[PRELIGHT]		= "#000000" # black
-	fg[SELECTED]		= "#ffffff" # white 
+	fg[SELECTED]		= "#ffffff" # white
 	fg[ACTIVE]		= "#000000" # black
 	fg[INSENSITIVE]		= "#b5b3ac" # dark beige
 
 	bg[NORMAL]		= "#ede9e3"
 	bg[PRELIGHT]		= "#f9f7f3" # very light beige
-	bg[SELECTED]		= "#d60052" # red
+	bg[SELECTED]		= "#FF6C00" # eta orange
 	bg[INSENSITIVE]		= "#efebe5" # beige
 	bg[ACTIVE]		= "#dcd4c9" #"#d7d3ca" # dark beige
 
-	base[NORMAL]		= "#ffffff" # white 
-	base[PRELIGHT]		= "#5f8ec4" # dark beige
-	base[ACTIVE]		= "#b20044" # darker red
-	base[SELECTED]		= "#d60052" # red
+	base[NORMAL]		= "#ffffff" # white
+	base[PRELIGHT]		= "#636363" # dark gray
+	base[ACTIVE]		= "#CF5800" # darker eta orange
+	base[SELECTED]		= "#FF6C00" # eta orange
 	base[INSENSITIVE]	= "#e8e5de" # beige
 
 	text[NORMAL]		= "#000000" # black
@@ -51,7 +51,7 @@ style "clearlooks-default"
 
 	engine "clearlooks" 
 	{
-	#scrollbar_color	= "#76acde"
+	#scrollbar_color	= "#636363"
 	menubarstyle		= 2	# 0 = flat, 1 = sunken, 2 = flat gradient
 	#menuitemstyle		= 1	# 0 = flat, 1 = 3d-ish (gradient), 2 = 3d-ish (button)
 	#listviewitemstyle	= 1	# 0 = flat, 1 = 3d-ish (gradient)
@@ -144,7 +144,7 @@ style "clearlooks-menubar" = "blackrock-default"
 {
 	bg[NORMAL]	= "#bacedb"
 }
-	
+
 # widget styles
 class "GtkWidget"	style "clearlooks-default"
 class "GtkButton"	style "clearlooks-button"
@@ -157,7 +157,7 @@ class "GtkEntry"	style "clearlooks-wider"
 class "GtkMenuItem"	style "clearlooks-menu-item"
 class "GtkNotebook"	style "clearlooks-notebook"
 class "GtkProgressBar"	style "clearlooks-progressbar"
- 
+
 #class "GtkMenuBar"	style "clearlooks-menubar"
 
 widget_class "*MenuItem.*"			style "clearlooks-menu-item"
@@ -180,4 +180,3 @@ widget_class "*.GtkFrame.GtkLabel"		style "clearlooks-frame-title"
 # notebook stuff
 widget_class "*.GtkNotebook.*.GtkEventBox"	style "clearlooks-notebook"
 widget_class "*.GtkNotebook.*.GtkViewport"	style "clearlooks-notebook"
-
