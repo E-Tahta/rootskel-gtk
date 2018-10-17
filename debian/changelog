@@ -1,3 +1,10 @@
+rootskel-gtk (1.32pardus1) stable; urgency=medium
+
+  * Change theme colors and banner for etap
+  * Pardus CI integration
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Wed, 17 Oct 2018 12:51:15 +0300
+
 rootskel-gtk (1.31) unstable; urgency=medium
 
   * Use the Jessie Lines theme for the installer
